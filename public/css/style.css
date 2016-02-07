@@ -76,13 +76,29 @@
 
 .navbar .navbar-collapse {
   text-align: center;
+
+
 }
-.collapse.width {
-    height: auto;
-    -webkit-transition: width 0.35s ease;
-    -moz-transition: width 0.35s ease;
-    -o-transition: width 0.35s ease;
-    transition: width 0.35s ease;
+.collapsing {
+	
+}
+.collapse {}
+
+}
+.collapse.in {
+
+}
+ [aria-expanded="false"] {
+ 
+  .logo {
+  	height:100px;
+	float: left;
+	z-index: 9999999999999;
+	position: fixed;
+	top: -40px;
+	left: 0;
+    }
+
 }
 
 .icon-bar {
@@ -102,11 +118,6 @@
 	/*padding: 0 5px;*/
 }
 
-
-
-
-
-
 /* display center navbar only on large screen :)*/;
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -119,3 +130,17 @@
         text-align: center;
     }
 }
+
+@media (max-width: 767px)  {
+
+  .logo {
+  	height:100px;
+	float: left;
+	z-index: 9999999999999;
+	position: absolute;
+	top: 0;
+	left: 0;
+    }
+
+}
+
